@@ -1,0 +1,103 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f8ff;
+  color: #1d2a36;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #15324d;
+  color: white;
+  padding: 22px 24px;
+  border-radius: 16px 16px 0 0;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.back-link {
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.12);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.media-grid {
+  background: white;
+  padding: 30px 20px 20px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 10px 25px rgba(15, 38, 53, 0.09);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+.media-card {
+  background: #f8fbff;
+  border: 1px solid #dfeaf4;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.media-card h2 {
+  margin-top: 0;
+}
+
+video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: #dfeaf4;
+}
+
+.audio-wrap {
+  display: block;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.note {
+  margin-top: 14px;
+  color: #4a5a69;
+  font-size: 0.96rem;
+}
+
+.map-card iframe {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Dashboard</title>
+  <link rel="stylesheet" href="q5_learning_dashboard.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Learning Dashboard</h1>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </header>
+
+  <main class="dashboard">
+    <section class="map-panel">
+      <h2>Virtual Campus Map</h2>
+      <iframe src="https://www.google.com/maps?q=Virtual%20Campus&output=embed" width="100%" height="260" align="center" frameborder="1" title="Campus map"></iframe>
+    </section>
+
+    <section class="assignment-panel">
+      <h2>Assignment Submission</h2>
+      <form>
+        <div class="form-row">
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" name="studentName" placeholder="Enter your name">
+        </div>
+
+        <div class="form-row">
+          <label for="fileUpload">Upload File</label>
+          <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx,.ppt,.pptx">
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Instructions</label>
+          <textarea id="notes" name="notes" rows="6">Please upload your assignment and include a brief summary of your learning outcome.</textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="examples-panel">
+      <h2>Block and Inline Elements</h2>
+      <p>This paragraph is a block element.</p>
+      <div>This div is also a block element.</div>
+      <span class="highlighted">This span is an inline element with custom styling.</span>
+    </section>
+  </main>
+
+  <script src="q5_learning_dashboard.js"></script>
+</body>
+</html>

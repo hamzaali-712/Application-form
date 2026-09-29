@@ -1,0 +1,69 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef5ff 0%, #dfeaf8 100%);
+  color: #1d2a36;
+}
+
+.hub-header {
+  background: #133b5c;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin: 0 0 10px;
+  opacity: 0.8;
+}
+
+.hub-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hub-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.hub-card {
+  display: block;
+  background: white;
+  border: 1px solid #dfe6f0;
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #1d2a36;
+  box-shadow: 0 10px 25px rgba(19, 59, 92, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(19, 59, 92, 0.14);
+}
+
+.hub-card span {
+  display: inline-block;
+  background: #dfeeff;
+  color: #133b5c;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hub-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
